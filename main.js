@@ -7,7 +7,7 @@ const computers = [
     {
         id: 1,
         company: 'Razer',
-        price: 1,500
+        price: 1500
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const computers = [
     {
         id: 3,
         company: 'Apple',
-        price: 1,000
+        price: 1000
     },
     {
         id: 4,
@@ -27,11 +27,11 @@ const computers = [
     {
         id: 5,
         company: 'Asus',
-        price: 1,300
-    },
+        price: 1300
+    }
 ];
 
 
-let computerCompanys = computers.map(computer => computer.company === 'Asus');
+let computerCompanys = computers.map(computer => computer.company );
 
 console.log(computerCompanys)
