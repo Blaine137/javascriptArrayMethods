@@ -33,5 +33,6 @@ const computers = [
 
 
 let computerCompanys = computers.map(computer => computer.company );
-
+let cheapComputers = computers.filter(computer => computer.price <= 800);
 console.log(computerCompanys)
+console.log(cheapComputers)
