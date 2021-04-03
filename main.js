@@ -32,8 +32,8 @@ const computers = [
 ];
 
 
-let computerCompanys = computers.map(computer => computer.company );
-let cheapComputers = computers.filter(computer => computer.price <= 800);
+let computerCompanys = computers.map(computer => computer.company ); //creates new array of all computer companys
+let cheapComputers = computers.filter(computer => computer.price <= 800); //creates new array of all computers that prices are under or equal to 800
 console.log(computerCompanys)
 console.log(cheapComputers)
 
@@ -43,7 +43,7 @@ let newComputer = {
     price: 750
 };
 
-computers.push(newComputer);
+computers.push(newComputer); //pushs a new computer object to the original array
 console.log(computers)
 
 let slicedComputers = computers.slice(0, 6); //removes the new lenovo object without changing the original array
