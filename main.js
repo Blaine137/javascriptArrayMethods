@@ -50,7 +50,9 @@ let slicedComputers = computers.slice(0, 6); //removes the new lenovo object wit
 console.log(slicedComputers)
 
 //comparing two objects
-let obj1 = { age: 2 };
-let obj2 = { age: 3 };
+let obj1 = { age: 2, name: 'blaine' };
+let obj2 = { age: 2, name: 'blaine' };
+let obj3 = obj1;
+console.log(obj1 === obj3) //obj1 and 3 reference the same object in memory (true)
 
-console.log(Object.is(obj1.age, obj2.age)) //change obj2.age to 2 and will return true
+console.log(JSON.stringify(obj1) === JSON.stringify(obj2)) // change one of the objects name/age property to a different string and this wiill return false
