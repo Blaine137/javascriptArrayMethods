@@ -31,6 +31,9 @@ const computers = [
     }
 ];
 
+let resetArrayLength = [...computers];
+resetArrayLength.length = 0; //empties out an array
+console.log(resetArrayLength)
 
 let computerCompanys = computers.map(computer => computer.company ); //creates new array of all computer companys
 let cheapComputers = computers.filter(computer => computer.price <= 800); //creates new array of all computers that prices are under or equal to 800
