@@ -56,3 +56,14 @@ let obj3 = obj1;
 console.log(obj1 === obj3) //obj1 and 3 reference the same object in memory (true)
 
 console.log(JSON.stringify(obj1) === JSON.stringify(obj2)) // change one of the objects name/age property to a different string and this wiill return false
+
+    //closure
+    let getComputers = (computers) => {
+        let comps = computers;
+        let loop = (comps) => {
+            let newComp = comps.filter(comp => comp.id === 5)
+            console.log(newComp)
+        }
+        loop(comps);
+    }
+    getComputers(computers);
