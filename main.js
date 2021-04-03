@@ -36,3 +36,15 @@ let computerCompanys = computers.map(computer => computer.company );
 let cheapComputers = computers.filter(computer => computer.price <= 800);
 console.log(computerCompanys)
 console.log(cheapComputers)
+
+let newComputer = {
+    id: 6,
+    company: 'Lenovo',
+    price: 750
+};
+
+computers.push(newComputer);
+console.log(computers)
+
+let slicedComputers = computers.slice(0, 6); //removes the new lenovo object without changing the original array
+console.log(slicedComputers) 
