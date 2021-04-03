@@ -43,7 +43,7 @@ let newComputer = {
     price: 750
 };
 
-computers.push(newComputer); //pushs a new computer object to the original array
+computers.push(newComputer); //adds a new computer object to the end of the array
 console.log(computers)
 
 let slicedComputers = computers.slice(0, 6); //removes the new lenovo object without changing the original array
