@@ -47,4 +47,10 @@ computers.push(newComputer); //adds a new computer object to the end of the arra
 console.log(computers)
 
 let slicedComputers = computers.slice(0, 6); //removes the new lenovo object without changing the original array
-console.log(slicedComputers) 
+console.log(slicedComputers)
+
+//comparing two objects
+let obj1 = { age: 2 };
+let obj2 = { age: 3 };
+
+console.log(Object.is(obj1.age, obj2.age)) //change obj2.age to 2 and will return true
