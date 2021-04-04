@@ -57,6 +57,8 @@ let array = [1, 2, 3, 4, 5];
 let reducer = (accumulator, currentValue) => accumulator + currentValue;
 console.log(array.reduce(reducer))
 
+console.log(array.reduce((acc, val) => acc + val))
+
 //comparing two objects
 let obj1 = { age: 2, name: 'blaine' };
 let obj2 = { age: 2, name: 'blaine' };
