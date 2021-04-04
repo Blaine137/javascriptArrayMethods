@@ -52,6 +52,11 @@ console.log(computers)
 let slicedComputers = computers.slice(0, 6); //removes the new lenovo object without changing the original array
 console.log(slicedComputers)
 
+//learning reduce array method
+let array = [1, 2, 3, 4, 5];
+let reducer = (accumulator, currentValue) => accumulator + currentValue;
+console.log(array.reduce(reducer))
+
 //comparing two objects
 let obj1 = { age: 2, name: 'blaine' };
 let obj2 = { age: 2, name: 'blaine' };
