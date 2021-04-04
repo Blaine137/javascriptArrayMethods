@@ -59,6 +59,13 @@ console.log(array.reduce(reducer))
 
 console.log(array.reduce((acc, val) => acc + val))
 
+//shift and unshift
+array.unshift(6); //add six to the beggining of the array
+console.log(array)
+
+array.shift(6); //removes six from the array
+console.log(array)
+
 //comparing two objects
 let obj1 = { age: 2, name: 'blaine' };
 let obj2 = { age: 2, name: 'blaine' };
