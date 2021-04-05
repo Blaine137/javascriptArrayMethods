@@ -56,15 +56,15 @@ console.log(slicedComputers)
 let array = [1, 2, 3, 4, 5];
 let stringArray = ['hello', 'world', 'from', 'blaine'];
 let reducer = (accumulator, currentValue) => accumulator + currentValue;
-console.log(array.reduce(reducer))
-console.log(stringArray.reduce(reducer, ' '))
+console.log(array.reduce(reducer)) //adds all the numbers in the array together for one value
+console.log(stringArray.reduce(reducer, ' ')) //combines all the strings together for one value
 console.log(array.reduce((acc, val) => acc + val))
 
 //shift and unshift
 array.unshift(6); //add six to the beggining of the array
 console.log(array)
 
-array.shift(6); //removes six from the array
+array.shift(6); //removes six from the beggining of the array
 console.log(array)
 
 //comparing two objects
