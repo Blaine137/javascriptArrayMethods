@@ -54,9 +54,10 @@ console.log(slicedComputers)
 
 //learning reduce array method
 let array = [1, 2, 3, 4, 5];
+let stringArray = ['hello', 'world', 'from', 'blaine'];
 let reducer = (accumulator, currentValue) => accumulator + currentValue;
 console.log(array.reduce(reducer))
-
+console.log(stringArray.reduce(reducer, ' '))
 console.log(array.reduce((acc, val) => acc + val))
 
 //shift and unshift
